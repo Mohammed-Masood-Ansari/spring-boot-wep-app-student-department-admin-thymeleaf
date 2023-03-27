@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="base::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>department-register-page</h3>
+
+	<section>
+
+		<div class="container p-5">
+			<div class="row">
+				<div class="col-md-6 offset-md-3">
+					<div class="card">
+						<div class="card-header text-center fs-4">Department Register Page</div>
+						<div class="card-body">
+							<form action="saveDepartment" method="post">
+								<div class="mb-3">
+									<label>Enter Department Name</label>
+									<input type="text" name="departmentName" class="form-control">
+								</div>
+								<button class="btn btn-primary col-md-12">Register</button>
+							</form>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	
+</body>
+</html>

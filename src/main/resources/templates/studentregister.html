@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="base::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h3>student-register-page</h3>
+
+	<section>
+
+		<div class="container p-5">
+			<div class="row">
+				<div class="col-md-6 offset-md-3">
+					<div class="card">
+						<div class="card-header text-center fs-4">Student Register
+							Page</div>
+						<div class="card-body">
+							<form action="saveStudent" method="post">
+								<div class="mb-3">
+									<label>Enter Student Name</label> <input type="text"
+										name="studentName" class="form-control">
+								</div>
+								<div class="mb-3">
+									<label>Enter Student RollNumber</label> <input type="text"
+										name="studentRollNumber" class="form-control">
+								</div>
+								<div class="mb-3">
+									<label>Enter Student DepartmentName</label>
+									<input type="text" name="departmentname" class="form-control" list="dno">
+									<datalist id="dno">
+										<option>CSE</option>
+										<option>ECE</option>
+										<option>EEE</option>
+										<option>IT</option>
+										<option>Civil</option>
+										<option>Mechanical</option>
+									</datalist>
+								</div>
+								<button class="btn btn-primary col-md-12">Register</button>
+							</form>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+</body>
+</html>
+
